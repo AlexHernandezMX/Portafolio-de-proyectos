@@ -1,0 +1,382 @@
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+   --color-de-seccionv1: #F5F5F5;
+   --color-de-seccionv2: #EAF2FD;
+   --color-de-parrafos: #000000;
+   --color-de-titulos: #1434A4;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--color-de-titulos);
+}
+
+button {
+    cursor: pointer;
+}
+
+.fondo{
+    background: var(--color-de-seccionv1);
+}
+
+/*Sección Menu*/
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+}
+
+.menu__header{
+    display: flex;
+}
+
+.menu__title{
+    font-size: 25px;
+}
+
+.menu__container{
+    color: var(--color-de-titulos);
+    margin: 5px;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    text-align: center;
+} 
+
+.menu__list__item{
+    padding: 0 1rem 0 1rem;
+}
+
+/*Sección Title*/
+
+.title__div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.title__container{
+    width: 65%;
+    align-items: center;
+    margin: 15px 10px 30px 20px;
+    padding: 1rem 0 1rem 0;
+}
+
+.title__profile{
+    width: 30%;
+    border-radius: 50px;
+    box-shadow: 1px 1px 40px 5px #000;
+    margin: 1rem;
+}
+
+.title__bio{
+    font-size: 45px;
+    margin: 15px 0 15px 0
+}
+
+.title__network{
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between;
+    margin: 5px;
+    text-align: center;
+}
+
+.title__network__item{
+    width: 100px;
+}
+
+.title__logo{
+    width: 35px;
+    border-radius: 15px;
+}
+
+/*Sección About*/
+
+.about__container{
+    background: var(--color-de-seccionv2);
+    text-align: center;
+    padding: 2rem;
+}
+
+.about__title{
+    color: var(--color-de-titulos);
+    font-size: 25px;
+}
+
+.about__img{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*Sección skills y hobbies*/
+
+.skills, .hobbies{
+    margin: 10px;
+    padding: 1rem;
+}
+
+.skills__title, .hobbies__title, .academic__title{
+    width: 100%;
+    text-align: center;
+    color: var(--color-de-titulos);
+    font-size: 25px;
+}
+
+.skills__line, .hobbies__line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__box{
+    width: 13%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    background-color: #ffffff;
+    margin: 0 5px 0 5px;
+}
+
+.skills__name, .hobbies__name{
+    font-weight: bold;
+}
+
+.hobbies__box{
+    width: 13%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+    background-color: #ffffff;
+    margin: 0 5px 0 5px;
+}
+
+.hobbies__img{
+    background-image: 10px;
+}
+
+/* Experiencia Académica*/
+
+.academic, .formcontato{
+    padding: 1rem;
+    background: var(--color-de-seccionv2);
+}
+
+.academic__title{
+    text-align: center;
+    margin: 25px 0 25px 0;
+}
+
+.academic__courses{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
+}
+
+.academic__courses__box{
+    text-align: center;
+    width: 40%;
+    margin: 5px 5px 15px 5px;
+    padding: 5px 5px 15px 5px;
+    background-color: #ffffff;
+}
+
+.academic__courses__list, .hobbies__list{
+    padding: 0;
+}
+
+/* experiencia*/
+
+.experience__section__title{
+    text-align: center;
+    color: var(--color-de-titulos);
+    margin: 25px 0 25px 0;
+}
+.experience__title{
+    color: var(--color-de-titulos);
+}
+
+.experiencie__box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 1% 20px 1%;
+    padding: .5rem;
+}
+
+.experience__img{
+    width: 300px;
+    height: 180px;
+    box-shadow: 1px 1px 15px 5px darkblue;
+    margin: 1rem;
+    padding: 2rem .5rem 2rem .5rem;
+}
+
+.experience__video{
+    width: 400px;
+    padding: .5rem .5rem 2rem .5rem;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+}
+
+.experiencia__botao--repo{
+    background: #ffffff;
+    color: #2A7AE4;
+    width: 130px;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #2A7AE4;
+    border-radius: 10px;
+}
+
+/*Contacto*/
+
+.formcontato__contacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formcontato__img{
+    margin: 2rem;
+    width: 550px;
+    border-radius: 10px;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.formcontato__title{
+    font-family: 'Raleway';
+    font-size: 32px;
+    margin: 10px 0 10px 0;
+}
+
+.formcontato__subtext{
+    font-family: 'Raleway';
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+::placeholder{
+    position: absolute;
+}
+
+.formcontato__input{
+    width: 90%;
+    height: 35px;
+    margin: 15px 0 15px 0;
+    border: none;
+}
+
+.formcontato__textarea{
+    width: 90%;
+    height: 100px;
+    margin: 15px 0 15px 0;
+    border: none;
+}
+
+.formcontato__botao{
+    width: 25%;
+    height: 50px;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 15px 0;
+    background: #2A7AE4;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/*footeer*/
+
+.footer__rodape{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
